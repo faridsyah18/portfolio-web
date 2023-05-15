@@ -89,20 +89,27 @@ body {
 .mobile {
     min-height: 100vh;
     display: flex;
+    position: sticky;
+    flex-direction: column;
     background-image: url('../img/Background\ homepage.png');
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
     background-position: center;
-    justify-content: center;
 }
 
 .mobile .content-mobile {
-    /* background-color: #010101; */
-    margin: 6rem;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    width: fit-content;
+    
+    background-color: #010101;
 }
 
 .mobile .content-mobile h1 {
-    font-size: 120px;
+    font-size: 60px;
+    
 }
 
 
