@@ -12,7 +12,9 @@
     text-decoration: none;
 }
 
-html {
+html,
+body {
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -77,7 +79,7 @@ body {
 
 .desktop .content-desktop {
     max-width: 60rem;
-    margin: 50rem 7rem 0rem;
+    margin: 35rem 7rem 0rem;
 }
 
 .desktop .content-desktop h1 {
@@ -89,7 +91,6 @@ body {
 .mobile {
     min-height: 100vh;
     display: flex;
-    position: sticky;
     flex-direction: column;
     background-image: url('../img/Background\ homepage.png');
     background-repeat: no-repeat;
@@ -100,11 +101,9 @@ body {
 
 .mobile .content-mobile {
     flex: 1;
-    flex-direction: column;
     display: flex;
     width: fit-content;
-    
-    background-color: #010101;
+    margin-top: 4rem;
 }
 
 .mobile .content-mobile h1 {
