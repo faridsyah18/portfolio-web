@@ -1,0 +1,116 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 20% 20%;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.644);
+    box-shadow:1px 1px 20px rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #fff;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Welcome Section : Desktop */
+
+.desktop {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/Background\ homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.desktop .content-desktop {
+    max-width: 60rem;
+    margin: 50rem 7rem 0rem;
+}
+
+.desktop .content-desktop h1 {
+    font-size: 160px;
+}
+
+/* Welcome Section : Mobile */
+
+.mobile {
+    min-height: 100vh;
+    display: flex;
+    background-image: url('../img/Background\ homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.mobile .content-mobile {
+    /* background-color: #010101; */
+    margin: 6rem;
+}
+
+.mobile .content-mobile h1 {
+    font-size: 120px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .desktop,
+    .navbar {
+        display: none;
+    }
+}
