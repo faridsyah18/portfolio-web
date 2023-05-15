@@ -1,5 +1,5 @@
 :root {
-    --primary: #b6895b;
+    --primary: #fff;
     --bg: #010101;
 }
 
@@ -12,9 +12,7 @@
     text-decoration: none;
 }
 
-html,
-body {
-    width: 100%;
+html {
     scroll-behavior: smooth;
 }
 
@@ -69,46 +67,69 @@ body {
 
 .desktop {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url('../img/Background\ homepage.png');
+    background-color: #131938;
+    background-image: linear-gradient(
+        0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%
+        ), url(../img/pattern.png );
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .desktop .content-desktop {
-    max-width: 60rem;
-    margin: 35rem 7rem 0rem;
+    display: flex;
+    margin-top: 47rem;
+    min-width: 0;
+    max-width: 60%;
+    /* background-color: black; */
+    line-height: 1.0;
+    padding-left: 5rem;
 }
 
 .desktop .content-desktop h1 {
-    font-size: 160px;
+    font-size: 120px;
 }
+
 
 /* Welcome Section : Mobile */
 
 .mobile {
+
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    background-image: url('../img/Background\ homepage.png');
+    background-image: linear-gradient(
+        -180deg, rgba(1, 1, 3, 1) 5%, rgba(255, 255, 255, 0) 40%
+        ), url(../img/pattern.png );
+    background-color: #131938;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
     background-position: center;
+    overflow: hidden;
 }
 
+/* .mobile::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+} */
+
 .mobile .content-mobile {
-    flex: 1;
     display: flex;
-    width: fit-content;
-    margin-top: 4rem;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    /* background-color: black; */
+    justify-content: center;
+    display: flex;
+    margin-top: 6.2rem;
 }
 
 .mobile .content-mobile h1 {
-    font-size: 60px;
-    
+    font-size: 100px;
 }
 
 
@@ -120,3 +141,10 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 1500px) {
+    .desktop {
+
+    }
+}
+
