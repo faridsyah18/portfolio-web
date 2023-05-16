@@ -63,7 +63,7 @@ body {
     transform: scaleX(0.5);
 }
 
-/* Welcome Section : Desktop */
+/* /* Welcome Section : Desktop  */
 
 .desktop {
     min-height: 100vh;
@@ -78,7 +78,7 @@ body {
 
 .desktop .content-desktop {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 20rem;
     width: 100%;
     line-height: 1.0;
     justify-content: center;
@@ -90,14 +90,14 @@ body {
     background-color: #000;
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 120px;
+    font-size: 10vmax;
     text-align: center;
     border-right: 5px solid #2a397e;
     border-left: 5px solid #2a397e;
 }
 
 
-/* Welcome Section : Mobile */
+/* /* Welcome Section : Mobile  */
 
 .mobile {
     min-height: 100vh;
@@ -145,16 +145,25 @@ body {
     padding-top: 2rem;
     /* background-color: #000; */
     color: #131938;
+    /* background-color: #131938; */
 }
 
-/* .mobile::after {
+.menu .about-me img,
+.menu .my-portfolio img {
+    /* background-color: #131938;  */
+    transform: scale(5);
+    margin-top: 6rem;
+
+}
+
+.mobile::after {
     content: '';
     display: block;
     position: absolute;
     width: 100%;
     height: 30%;
     bottom: 0;
-} */
+}
 
 .mobile .content-mobile {
     display: flex;
@@ -165,15 +174,20 @@ body {
     justify-content: center;
     display: flex;
     margin-top: 6.2rem;
-    overflow: hidden;
+    overflow: clip;
 }
 
 .mobile .content-mobile h1 {
-    font-size: 100px;
+    min-width: 100%;
+    font-size: 7vmax;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #000; */
+    justify-content: center;
 }
 
 
-/* Media Queries */
+/* /* Media Queries  */
 
 @media (min-width: 1201px) {
     .mobile {
@@ -188,29 +202,49 @@ body {
     }
 }
 
-@media (max-width: 770px) {
-    .mobile .content-mobile h1 {
-        font-size: 85px;
-    }
-
-    html {
-        overflow: hidden;
-    }
-
+@media (max-width: 600px) {
     .mobile .menu {
-        align-items: center;
         /* background-color: #000; */
-        align-items: center;
-        padding-top: 18rem;
+        display: flex;
+        padding-top: 35vmax;
+        /* margin: auto;
+        min-height: fit-content; */
         flex-wrap: wrap;
     }
 
     .menu .about-me,
     .menu .my-portfolio {
-        margin: 1rem;
-        /* background-color: #000; */
+        margin: 3vmax;
+        display: flex;
+        background-color: #ffffff;
         width: 15rem;
-        height: 15rem;
+        align-items: center;
+        height: 3rem;
+        overflow: hidden;
     }
+
+    .menu .about-me img,
+    .menu .my-portfolio img {
+        transform: scale(3);
+        margin-top: 0rem;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .menu .about-me h1,
+    .menu .my-portfolio h1 {
+        padding: 0;
+        width: 100%;
+        color: #131938;
+        text-align: center;
+        /* background-color: #131938; */
+    }
+
+    .menu .about-me:hover,
+    .menu .my-portfolio:hover {
+        transform: none;
+    }
+
+
 }
 
