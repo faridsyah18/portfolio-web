@@ -113,7 +113,7 @@ body {
 }
 
 .menu {
-    /* background-color: #fff; */
+    /* background-color: #000; */
     color: #000;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ body {
 .menu .my-portfolio {
     background-color: #fff;
     margin: 2rem;
-    margin-top: 20rem;
+    margin-top: 30vmax;
     width: 20rem;
     height: 20rem;
     text-align: center;
@@ -179,7 +179,7 @@ body {
 
 .mobile .content-mobile h1 {
     min-width: 100%;
-    font-size: 7vmax;
+    font-size: 10vmax;
     display: flex;
     flex-wrap: wrap;
     /* background-color: #000; */
@@ -200,9 +200,11 @@ body {
     .navbar {
         display: none;
     }
+
+    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
     .mobile .menu {
         /* background-color: #000; */
         display: flex;
@@ -217,7 +219,7 @@ body {
         margin: 3vmax;
         display: flex;
         background-color: #ffffff;
-        width: 15rem;
+        max-width: 80vmax;
         align-items: center;
         height: 3rem;
         overflow: hidden;
@@ -245,6 +247,18 @@ body {
         transform: none;
     }
 
+    .mobile .content-mobile h1 {
+        font-size: 17vmin;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .menu .about-me,
+    .menu .my-portfolio {
+        width: 50rem;
+    }
 
 }
 
