@@ -94,7 +94,7 @@ body {
 }
 
 
-.desktop .content-desktop h1 {
+.desktop .content-desktop .welcome-h1-desktop {
     display: flex;
     background-color: #000;
     justify-content: center;
@@ -105,9 +105,19 @@ body {
     text-align: center;
     border-right: 5px solid #2a397e;
     border-left: 5px solid #2a397e;
+    /* transform-origin: 0%; */
+    /* transform: translateY(50%);
+    opacity: 0;
+    transition-delay: 1s;
+    transition-duration: 1.3s; */
 }
 
-.desktop .content-desktop p {
+.desktop .content-desktop h1.muncul {
+    opacity: 1;
+    transform: translateY();
+}
+
+.desktop .content-desktop .mine-desktop {
     background-color: #000;
     text-align: center;
     width: fit-content;
@@ -249,7 +259,9 @@ body {
 .footer {
     display: flex;
     background-color: #fff;
-    margin: 100px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .footer .social-media-mobile {
