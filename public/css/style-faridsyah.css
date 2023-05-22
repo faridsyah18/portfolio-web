@@ -30,7 +30,7 @@ body {
     flex-direction: column;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 20% 20%;
@@ -69,6 +69,20 @@ body {
 
 .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
+} */
+
+header .nav-desktop {
+    background-color: #131938;
+    background-image: url(/public/img/pattern.png);
+    background-size: contain;
+    padding: 1rem;
+    background-blend-mode: soft-light;
+    z-index: 999;
+}
+
+header .nav-desktop a {
+    color: #ffffff;
+    text-align: center;
 }
 
 /* /* Welcome Section : Desktop  */
@@ -86,7 +100,7 @@ body {
 
 .desktop .content-desktop {
     display: flex;
-    margin: 20rem 0rem auto;
+    margin: 10rem 0rem auto;
     width: 100%;
     line-height: 1.0;
     justify-content: center;
@@ -138,6 +152,38 @@ body {
     margin: 5rem auto;
     border-radius: 15px 15px 15px 15px;
 }
+
+button {
+    margin: 1rem;
+    background-color: #000;
+    padding: 10px 10px;
+    border-radius: 30px 30px;
+}
+
+button a {
+    color: #fff;
+    font-size: 30px;
+    padding: 1.4rem;
+    font-weight: 700;
+}
+
+button .about-me:hover,
+button .my-portfolio:hover {
+    color: #000000;
+}
+
+button:hover {
+    background-color: #2a397e;
+}
+
+.con-menu-desktop {
+    display: flex;
+    margin: 4rem auto;
+    width: fit-content;
+    /* background-color: #2a397e; */
+}
+
+
 
 /* .desktop .contact-me .contact-me-text {
     color: #000;
