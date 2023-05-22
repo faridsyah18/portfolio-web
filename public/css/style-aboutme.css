@@ -67,7 +67,7 @@ footer .social-media a {
 
 header .nav-desktop {
     background-color: #131938;
-    background-image: url(/public/img/pattern.png);
+    background-image: url(../img/pattern.png);
     background-size: contain;
     padding: 1rem;
     background-blend-mode: soft-light;
@@ -82,7 +82,7 @@ header .nav-desktop a {
 .profil {
     display: flex;
     /* background-color: chartreuse; */
-    background-image: url(/public/img/Pasfoto.jpg);
+    background-image: url(../img/Pasfoto.jpg);
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -113,7 +113,7 @@ header .nav-desktop a {
 } */
 
 .profil .foto-con .foto {
-    background-image: url(/public/img/Pasfoto.jpg);
+    background-image: url(../img/Pasfoto.jpg);
     background-size: cover;
     margin: auto;
     height: 90%;
