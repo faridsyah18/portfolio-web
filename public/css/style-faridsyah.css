@@ -364,10 +364,15 @@ button:hover {
         display: none;
     }
 
+    header {
+        display: none;
+    }
+
     
 }
 
 @media (max-width: 780px) {
+
     .mobile .menu {
         /* background-color: #000; */
         display: flex;
