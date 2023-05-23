@@ -61,10 +61,6 @@ footer .cr {
     margin: 20px 20px 20px;
 }
 
-footer .social-media a {
-    color: #000;
-}
-
 header .nav-desktop {
     background-color: #131938;
     background-image: url(../img/pattern.png);
@@ -139,13 +135,6 @@ header .nav-desktop a {
     justify-content: center;
 }
 
-.side-nav .nav-desktop-left a {
-    color: #ffffff;
-    margin: 2rem;
-    font-size: 24px;
-    font-weight: 700;
-}
-
 .side-nav .nav-desktop-left a::after {
     content: "";
     display: block;
@@ -159,22 +148,57 @@ header .nav-desktop a {
     transform: scaleX(0.5);
 }
 
-.about-me {
-    background-color: #ffffff28;
-    backdrop-filter: blur(0.3rem);
-    width: 80%;
-    margin-left: auto;
-    min-height: 100vh;
-    z-index: 3;
-}
-
-.about-me .sub-header {
-    /* background-color: #ffffff52; */
-    /* margin: 20px; */
-    padding: 1px;
-}
-
-.about-me .sub-header h1 {
+.side-nav .nav-desktop-left a {
     color: #ffffff;
-    margin: 30px;
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* class active */
+
+.side-nav .nav-desktop-left a.active {
+    color: #00e1ff;
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.isi-page {
+    background-color: #ffffff62;
+    width: 80%;
+    min-height: 100vh;
+    margin-left: auto;
+}
+
+.isi-page .about-me-isi,
+.isi-page .skills-isi,
+.isi-page .exp-isi,
+.isi-page .portfo-isi {
+}
+
+.isi-page .skills-isi,
+.isi-page .exp-isi,
+.isi-page .portfo-isi {
+    display: none;
+}
+
+
+
+
+
+footer .social-media {
+    float: left;
+    margin: 20px 20px 20px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 20px 20px 20px;
+}
+
+#instagram-mobile:hover,
+#linkedin-mobile:hover,
+#mail-mobile:hover {
+    color: #2f3d83;
 }
