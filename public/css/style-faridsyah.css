@@ -73,7 +73,7 @@ body {
 
 header .nav-desktop {
     background-color: #131938;
-    background-image: url(/public/img/pattern.png);
+    background-image: url(../img/pattern.png);
     background-size: contain;
     padding: 1rem;
     background-blend-mode: soft-light;
