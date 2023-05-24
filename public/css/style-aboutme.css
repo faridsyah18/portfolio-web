@@ -11,6 +11,19 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 20px;
+}
+
 html, 
 body {
     min-height: 100%;
@@ -165,7 +178,7 @@ header .nav-desktop a {
 }
 
 .isi-page {
-    background-color: #ffffff62;
+    background-color: #1a0f50ec;
     width: 80%;
     min-height: 100vh;
     margin-left: auto;
@@ -175,13 +188,72 @@ header .nav-desktop a {
 .isi-page .skills-isi,
 .isi-page .exp-isi,
 .isi-page .portfo-isi {
+    padding: 20px 30px;
 }
 
+.isi-page .about-me-isi .judul h1,
+.isi-page .skills-isi .judul h1,
+.isi-page .exp-isi .judul h1,
+.isi-page .portfo-isi .judul h1 {
+    color: #fff;
+    /* background-color: #000; */
+}
+
+.isi-page .about-me-isi .judul {
+    /* background-color: #000; */
+}
+
+.isi-page .about-me-isi {
+    /* background-color: #000; */
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.isi-page .about-me-isi .isi {
+    margin-top: 1rem;
+    color: #fff;
+    /* background-color: #00e1ff; */
+}
+
+.isi-page .about-me-isi .isi h2 {
+    font-size: 40px;
+    margin-top: 2.3rem;
+    font-weight: 400;
+    /* background-color: #000; */
+    margin-bottom: 1rem;
+}
+
+.isi-page .about-me-isi .isi p {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    /* background-color: #0026ff; */
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.isi-page .skills-isi .isi {
+    background-color: #000;
+}
+
+.isi-page .about-me-isi,
 .isi-page .skills-isi,
 .isi-page .exp-isi,
 .isi-page .portfo-isi {
     display: none;
 }
+
+.isi-page .about-me-isi.muncul,
+.isi-page .skills-isi.muncul,
+.isi-page .exp-isi.muncul,
+.isi-page .portfo-isi.muncul {
+    display: block;
+}
+
+
 
 
 

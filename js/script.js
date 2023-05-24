@@ -1,8 +1,8 @@
 // Mengambil semua elemen <a> di dalam .nav-desktop-left
 const navLinks = document.querySelectorAll('.nav-desktop-left a');
 
-// Mengambil semua elemen <h1>
-const headings = document.querySelectorAll('.judul .sub-header h1');
+// Mengambil semua elemen <div> yang ada di isi
+const isiPages = document.querySelectorAll('.isi-page > div')
 
 // Mendaftarkan event listener untuk setiap elemen <a>
 navLinks.forEach((link, index) => {
@@ -16,5 +16,13 @@ navLinks.forEach((link, index) => {
 
     // Menambahkan kelas .active pada elemen <a> yang diklik
         this.classList.add('active');
+
+    // Menghapus kelas .muncul dari semua elemen <div> di isiPage
+    isiPages.forEach(page => {
+        page.classList.remove('muncul');
+    });
+
+    // Menambahkan kelas .muncul pada elemen 
+    isiPages[index].classList.add('muncul');
     });
 });
